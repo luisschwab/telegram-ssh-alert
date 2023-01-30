@@ -20,8 +20,8 @@ there is no rc file for that user)
 6. Edit `tg-ssh-alert.sh` and modify these variables with your own values:
     1. `chat_id`
     2. `telegram_api_token`
-    3. `allowed_subnets`
-    4. `allowed_addresses`
+    3. `allowed_subnets`, CIDR notation, space-separated
+    4. `allowed_addresses`, space-separated
     5. `only_unauthorized`
 
 
