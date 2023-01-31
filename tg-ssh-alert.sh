@@ -99,7 +99,7 @@ message="*${header}*
 src: ${client_address}
 dst: ${client_username}@${server_hostname}
 
-${client_address} <--ssh--> ${server_address}
+${client_address} <==SSH==> ${server_address}
 
 @ *${login_date} ${login_time}*"
 
