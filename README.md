@@ -12,11 +12,11 @@ Can be configured to trigger on all connections, or only on connections made by 
 
 # Usage
 1. Create a new Telegram Bot by messaging @BotFather, get the API token and chat_id
-2. Create the file ~/.ssh/rc (if you want it to be triggered when this specific user logs in) or /etc/ssh/sshrc (triggered on all logins iff
+2. Download the script
+3. Make it executable: `$ sudo chmod +x telegram-ssh-alert.sh`
+4. Create the file ~/.ssh/rc (if you want it to be triggered when this specific user logs in) or /etc/ssh/sshrc (triggered on all logins iff
 there is no rc file for that user)
-3. Inside this file, add the following line: `./.ssh/tg-ssh-alert.sh`
-4. Copy the script into ~/.ssh (or /etc/ssh/sshrc)
-5. Make it executable: `$ sudo chmod +x tg-ssh-alert.sh`
+5. Inside this file, add the absolute path of the script as an executable. Assuming it is located in the home folder: `./~/telegram-ssh-alert.sh`
 6. Edit `tg-ssh-alert.sh` and modify these variables with your own values:
     1. `chat_id`
     2. `telegram_api_token`
