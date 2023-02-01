@@ -16,7 +16,7 @@ Can be configured to trigger on all connections, or only on connections made by 
 3. Make it executable: `$ sudo chmod +x telegram-ssh-alert.sh`
 4. Create the file ~/.ssh/rc (if you want it to be triggered when this specific user logs in) or /etc/ssh/sshrc (triggered on all logins iff
 there is no rc file for that user)
-5. Inside this file, add the absolute path of the script as an executable. Assuming it is located in the home folder: `./~/telegram-ssh-alert.sh`
+5. Inside this file, add the absolute path of the script as an executable. Assuming it is located in ~/: `./~/telegram-ssh-alert.sh`
 6. Edit `tg-ssh-alert.sh` and modify these variables with your own values:
     1. `chat_id`
     2. `telegram_api_token`
